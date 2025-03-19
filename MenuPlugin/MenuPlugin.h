@@ -14,6 +14,7 @@ class MenuPlugin: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesMod:
 	//std::shared_ptr<bool> enabled;
 
 	//Boilerplate
+public:
 	virtual void onLoad();
 	virtual void onUnload();
 
@@ -41,5 +42,9 @@ class MenuPlugin: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesMod:
 	virtual void OnClose() override;
 	
 	*/
+private:
+	void ExitGame();
+
+
 };
 
